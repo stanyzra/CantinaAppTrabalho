@@ -6,6 +6,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.orm.SchemaGenerator;
+import com.orm.SugarContext;
+import com.orm.SugarDb;
+
 public class MainActivity extends AppCompatActivity {
 
     Button vendaButton;
@@ -14,6 +18,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //SugarContext.init(getApplicationContext());
+        //SchemaGenerator schemaGenerator = new SchemaGenerator(this);
+        //schemaGenerator.createDatabase(new SugarDb(this).getDB());
 
         vendaButton = (Button) findViewById(R.id.vendaButton);
         vendaButton.setOnClickListener(new View.OnClickListener() {
