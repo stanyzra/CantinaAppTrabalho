@@ -6,6 +6,7 @@ import com.orm.SugarRecord;
  * Created by aluno on 12/11/18.
  */
 
+
 public class Produto extends SugarRecord{
     private String nome;
     private double valor;
