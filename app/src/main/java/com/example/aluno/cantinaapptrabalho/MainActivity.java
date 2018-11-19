@@ -13,6 +13,7 @@ import com.orm.SugarDb;
 public class MainActivity extends AppCompatActivity {
 
     Button vendaButton;
+    Button prodButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,10 +25,17 @@ public class MainActivity extends AppCompatActivity {
         //schemaGenerator.createDatabase(new SugarDb(this).getDB());
 
         vendaButton = (Button) findViewById(R.id.vendaButton);
+        prodButton = (Button) findViewById(R.id.prodButton);
         vendaButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, ProdutoActivity.class));
+            }
+        });
+        prodButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ListProdActivity.class));
             }
         });
     }
