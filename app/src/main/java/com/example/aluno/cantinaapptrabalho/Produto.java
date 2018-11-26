@@ -22,6 +22,12 @@ public class Produto extends SugarRecord{
         this.valor = valor;
     }
 
+    @Override
+    public String toString() {
+        return  "nome='" + nome + '\'' +
+                ", preço=" + valor;
+    }
+
     public String getNome() {
 
         return nome;

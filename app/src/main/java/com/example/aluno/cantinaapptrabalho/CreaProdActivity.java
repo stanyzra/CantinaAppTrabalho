@@ -21,7 +21,7 @@ public class CreaProdActivity extends AppCompatActivity {
         setContentView(R.layout.activity_crea_prod);
 
         nome = (EditText) findViewById(R.id.editNome);
-        valor = (EditText) findViewById(R.id.editNome);
+        valor = (EditText) findViewById(R.id.editValor);
         salvar = (Button) findViewById(R.id.buttonSalvar);
         lista = (Button) findViewById(R.id.buttonListar);
 
